@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./",
-    "lint:fix": "eslint --fix ./"
+    "lint:fix": "eslint --fix ./",
+    "stylelint": "stylelint \"**/*.css\"",
+    "stylelint:fix": "stylelint \"**/*.css\" --fix"
   },
   "repository": {
     "type": "git",
@@ -20,13 +22,19 @@
   },
   "homepage": "https://github.com/ElizaChernysh/clean-code-s1e1#readme",
   "devDependencies": {
+    "@babel/eslint-plugin": "^7.19.1",
     "@html-eslint/eslint-plugin": "^0.18.0",
     "@html-eslint/parser": "^0.18.0",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
-    "prettier": "2.8.7"
+    "eslint-plugin-css-modules": "^2.11.0",
+    "prettier": "2.8.7",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-order": "^6.0.3"
   },
   "dependencies": {
+    "@linaria/postcss-linaria": "^4.1.5",
+    "eslint-plugin-css": "^0.7.0",
     "eslint-plugin-html": "^7.1.0"
   }
 }
